@@ -1,11 +1,23 @@
-@mixin iphone5SE() {
-  @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
-    @content;
+@import "scss/mixins.scss";
+
+// Media Queries
+
+/* ----------- iPhone 6 - X Landscape ----------- */
+@include iphoneLandscape() {
+  .mq {
+    padding: 13rem 0 4rem 0;
   }
 }
 
-@include iphone5SE() {
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+@include iphone5() {
   .mq {
-    padding: 16rem 0 4rem 0;
+    padding: 5rem 0 4rem 0;
+  }
+}
+
+@include iphone5Landscape() {
+  .mq {
+    padding: 19rem 0 4rem 0;
   }
 }
