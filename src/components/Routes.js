@@ -3,6 +3,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Home from "../pages/Home";
 import Palindrome from "../pages/Palindrome";
+import RomanNumerals from "../pages/RomanNumerals";
 import NotFound from "../pages/NotFound";
 
 const Routes = () => {
@@ -13,6 +14,9 @@ const Routes = () => {
       </Route>
       <Route exact path="/Palindrome-Checker">
         <Palindrome />
+      </Route>
+      <Route exact path="/Roman-Numeral-Converter">
+        <RomanNumerals />
       </Route>
       <Route>
         <NotFound />

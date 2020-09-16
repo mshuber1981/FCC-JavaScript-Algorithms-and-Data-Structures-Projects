@@ -23,6 +23,9 @@ const NavBar = () => {
             <LinkContainer exact to="/Palindrome-Checker">
               <Nav.Link>Palindrome Checker</Nav.Link>
             </LinkContainer>
+            <LinkContainer exact to="/Roman-Numeral-Converter">
+              <Nav.Link>Roman Numeral Converter</Nav.Link>
+            </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
