@@ -2,22 +2,29 @@
 
 // Media Queries
 
-/* ----------- iPhone 6 - X Landscape ----------- */
+/* ----------- iPhone 6 - X (Landscape) ----------- */
 @include iphoneLandscape() {
-  .mq {
+  .palindrome {
     padding: 13rem 0 4rem 0;
+  }
+  .roman {
+    padding: 17rem 0 4rem 0;
   }
 }
 
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* ----------- iPhone 5, 5S, 5C and 5SE (Portrait and Landscape) ----------- */
 @include iphone5() {
-  .mq {
+  .palindrome {
     padding: 5rem 0 4rem 0;
+  }
+  .roman {
+    padding: 14rem 0 5rem 0;
   }
 }
 
 @include iphone5Landscape() {
-  .mq {
+  .palindrome,
+  .roman {
     padding: 19rem 0 4rem 0;
   }
 }

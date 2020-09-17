@@ -66,7 +66,7 @@ const RomanNumberals = () => {
 
   return (
     <section className="container">
-      <div className="mq d-flex flex-column vh-100 align-items-center justify-content-center bg-light text-center overflow-auto">
+      <div className="roman d-flex flex-column vh-100 align-items-center justify-content-center bg-light text-center overflow-auto">
         <CardDeck className="m-3">
           <Card>
             <Card.Body>
