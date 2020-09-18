@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/css/main.bf96c3b0.chunk.css",
-    "main.js": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/js/main.f11a4cc7.chunk.js",
-    "main.js.map": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/js/main.f11a4cc7.chunk.js.map",
+    "main.css": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/css/main.3f68195a.chunk.css",
+    "main.js": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/js/main.9bc0c43e.chunk.js",
+    "main.js.map": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/js/main.9bc0c43e.chunk.js.map",
     "runtime-main.js": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/js/runtime-main.78ae1c6d.js",
     "runtime-main.js.map": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/js/runtime-main.78ae1c6d.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.796f8b8c.chunk.js": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/js/2.796f8b8c.chunk.js",
-    "static/js/2.796f8b8c.chunk.js.map": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/js/2.796f8b8c.chunk.js.map",
+    "static/js/2.e99f40ce.chunk.js": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/js/2.e99f40ce.chunk.js",
+    "static/js/2.e99f40ce.chunk.js.map": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/js/2.e99f40ce.chunk.js.map",
     "index.html": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/index.html",
-    "precache-manifest.afab4e316f2050cd258e809459a38824.js": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/precache-manifest.afab4e316f2050cd258e809459a38824.js",
+    "precache-manifest.184ebe54afbb06a1314b29243018f507.js": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/precache-manifest.184ebe54afbb06a1314b29243018f507.js",
     "service-worker.js": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.bf96c3b0.chunk.css.map": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/css/main.bf96c3b0.chunk.css.map",
-    "static/js/2.796f8b8c.chunk.js.LICENSE.txt": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/js/2.796f8b8c.chunk.js.LICENSE.txt"
+    "static/css/main.3f68195a.chunk.css.map": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/css/main.3f68195a.chunk.css.map",
+    "static/js/2.e99f40ce.chunk.js.LICENSE.txt": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/js/2.e99f40ce.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.78ae1c6d.js",
     "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.796f8b8c.chunk.js",
-    "static/css/main.bf96c3b0.chunk.css",
-    "static/js/main.f11a4cc7.chunk.js"
+    "static/js/2.e99f40ce.chunk.js",
+    "static/css/main.3f68195a.chunk.css",
+    "static/js/main.9bc0c43e.chunk.js"
   ]
 }
