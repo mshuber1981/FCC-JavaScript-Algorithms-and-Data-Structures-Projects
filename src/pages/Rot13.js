@@ -3,46 +3,19 @@ import React, { useState } from "react";
 // https://react-bootstrap.github.io/layout/grid/#container
 import { Card, CardDeck, Form, Button } from "react-bootstrap";
 
-const RomanNumberals = () => {
+const Rot13 = () => {
   const [input, setInput] = useState("");
   const [validated, setValidated] = useState(false);
   const [submitted, setSubmit] = useState(false);
   const [inputCopy, setInputCopy] = useState("");
-  const [romans, setRomans] = useState("");
+  const [encoded, encode] = useState("");
 
-  const convertToRomans = (input) => {
-    const getNumeral = (digit, lowStr, midStr, nextStr) => {
-      switch (true) {
-        case digit <= 3:
-          return lowStr.repeat(digit);
-        case digit === 4:
-          return lowStr + midStr;
-        case digit <= 8: // digits 5-8
-          return midStr + lowStr.repeat(digit - 5);
-        default:
-          // digit 9
-          return lowStr + nextStr;
-      }
-    };
-
-    let str = "";
-
-    // Thousands
-    str += "M".repeat(Math.floor(input / 1000));
-    input %= 1000;
-
-    // Hundreds
-    str += getNumeral(Math.floor(input / 100), "C", "D", "M");
-    input %= 100;
-
-    // Tens
-    str += getNumeral(Math.floor(input / 10), "X", "L", "C");
-    input %= 10;
-
-    // Ones
-    str += getNumeral(input, "I", "V", "X");
-
-    return str;
+  const rot13 = (str) => {
+    return (str + "").replace(/[a-zA-Z]/gi, function (s) {
+      return String.fromCharCode(
+        s.charCodeAt(0) + (s.toLowerCase() < "n" ? 13 : -13)
+      );
+    });
   };
 
   const handleInputChange = (event) => setInput(event.target.value);
@@ -58,7 +31,7 @@ const RomanNumberals = () => {
       event.preventDefault();
       setSubmit(true);
       setInputCopy(input);
-      setRomans(convertToRomans(input));
+      encode(rot13(input));
       setValidated(false);
       event.target.reset();
     }
@@ -66,22 +39,23 @@ const RomanNumberals = () => {
 
   return (
     <section className="container">
-      <div className="roman d-flex flex-column vh-100 align-items-center justify-content-center bg-light text-center overflow-auto">
+      <div className="rot13 d-flex flex-column vh-100 align-items-center justify-content-center bg-light text-center overflow-auto">
         <CardDeck className="m-3">
           <Card>
             <Card.Body>
-              <Card.Title>What is a Roman Numeral?</Card.Title>
+              <Card.Title>What is ROT13?</Card.Title>
               <Card.Text>
-                Roman numerals are a numeral system that originated in ancient
-                Rome and remained the usual way of writing numbers throughout
-                Europe well into the Late Middle Ages.
+                ROT13 ("rotate by 13 places", sometimes hyphenated ROT-13) is a
+                simple letter substitution cipher that replaces a letter with
+                the 13th letter after it, in the alphabet. ROT13 is a special
+                case of the Caesar cipher which was developed in ancient Rome.
               </Card.Text>
               <a
-                href="https://en.wikipedia.org/wiki/Roman_numerals"
+                href="https://en.wikipedia.org/wiki/ROT13"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button variant="primary">Roman Numberals - Wikipedia</Button>
+                <Button variant="primary">ROT13 - Wikipedia</Button>
               </a>
             </Card.Body>
           </Card>
@@ -97,11 +71,12 @@ const RomanNumberals = () => {
             className="align-items-center"
             controlId="palindromeChecker"
           >
-            <Form.Label className="h4">Roman Numeral Converter</Form.Label>
+            <Form.Label className="h4">ROT13 Encoder</Form.Label>
             <Form.Control
               required
-              type="number"
-              placeholder="Enter number to convert"
+              type="text"
+              pattern="[\D ]+"
+              placeholder="Enter text only to convert"
               onChange={handleInputChange}
               className="my-3 mx-auto w-75 text-center"
             />
@@ -111,7 +86,7 @@ const RomanNumberals = () => {
           </Button>
           {!submitted ? null : submitted ? (
             <h4 className="text-success">
-              {inputCopy} = {romans}
+              {inputCopy} = {encoded}
             </h4>
           ) : null}
         </Form>
@@ -120,4 +95,4 @@ const RomanNumberals = () => {
   );
 };
 
-export default RomanNumberals;
+export default Rot13;

@@ -26,6 +26,9 @@ const NavBar = () => {
             <LinkContainer exact to="/Roman-Numeral-Converter">
               <Nav.Link>Roman Numeral Converter</Nav.Link>
             </LinkContainer>
+            <LinkContainer exact to="/ROT13">
+              <Nav.Link>ROT13</Nav.Link>
+            </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

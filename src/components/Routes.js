@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router-dom";
 import Home from "../pages/Home";
 import Palindrome from "../pages/Palindrome";
 import RomanNumerals from "../pages/RomanNumerals";
+import Rot13 from "../pages/Rot13";
 import NotFound from "../pages/NotFound";
 
 const Routes = () => {
@@ -17,6 +18,9 @@ const Routes = () => {
       </Route>
       <Route exact path="/Roman-Numeral-Converter">
         <RomanNumerals />
+      </Route>
+      <Route exact path="/ROT13">
+        <Rot13 />
       </Route>
       <Route>
         <NotFound />
