@@ -7,7 +7,7 @@ import { FaFreeCodeCamp } from "react-icons/fa";
 const Home = () => {
   return (
     <section className="container">
-      <div className="d-flex flex-column align-items-center justify-content-center vh-100 bg-light text-center">
+      <div className="d-flex flex-column vh-100 align-items-center justify-content-center text-center bg-light">
         <h1 className="display-4">Welcome!</h1>
         <p className="my-5">
           Thanks for checking out my spin on the{" "}

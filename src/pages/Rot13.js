@@ -39,7 +39,7 @@ const Rot13 = () => {
 
   return (
     <section className="container">
-      <div className="rot13 d-flex flex-column vh-100 align-items-center justify-content-center bg-light text-center overflow-auto">
+      <div className="rot13 d-flex flex-column vh-100 align-items-center justify-content-center text-center bg-light overflow-auto">
         <CardDeck className="m-3">
           <Card>
             <Card.Body>
