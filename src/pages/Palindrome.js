@@ -72,6 +72,9 @@ const Palindrome = () => {
               onChange={handleInputChange}
               className="my-3 mx-auto w-75 text-center"
             />
+            <Form.Control.Feedback type="invalid">
+              Please enter at least one character.
+            </Form.Control.Feedback>
           </Form.Group>
           <Button variant="primary" type="submit" className="mb-4">
             Submit
