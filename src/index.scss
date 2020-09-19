@@ -8,7 +8,8 @@
     padding: 13rem 0 4rem 0;
   }
   .roman,
-  .rot13 {
+  .rot13,
+  .phone {
     padding: 17rem 0 4rem 0;
   }
 }
@@ -22,12 +23,16 @@
   .rot13 {
     padding: 14rem 0 5rem 0;
   }
+  .phone {
+    padding: 21rem 0 5rem 0;
+  }
 }
 
 @include iphone5Landscape() {
   .palindrome,
   .roman,
-  .rot13 {
+  .rot13,
+  .phone {
     padding: 19rem 0 4rem 0;
   }
 }
