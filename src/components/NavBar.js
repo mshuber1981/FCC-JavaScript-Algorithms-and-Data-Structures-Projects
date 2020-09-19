@@ -29,6 +29,9 @@ const NavBar = () => {
             <LinkContainer exact to="/ROT13">
               <Nav.Link>ROT13</Nav.Link>
             </LinkContainer>
+            <LinkContainer exact to="/Valid-Phone-Number">
+              <Nav.Link>Valid Phone Number</Nav.Link>
+            </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
