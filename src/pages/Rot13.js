@@ -67,10 +67,7 @@ const Rot13 = () => {
           validated={validated}
           onSubmit={handleSubmit}
         >
-          <Form.Group
-            className="align-items-center"
-            controlId="palindromeChecker"
-          >
+          <Form.Group className="align-items-center">
             <Form.Label className="h4">ROT13 Encoder</Form.Label>
             <Form.Control
               required

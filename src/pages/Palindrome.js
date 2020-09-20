@@ -60,10 +60,7 @@ const Palindrome = () => {
           validated={validated}
           onSubmit={handleSubmit}
         >
-          <Form.Group
-            className="align-items-center"
-            controlId="palindromeChecker"
-          >
+          <Form.Group className="align-items-center">
             <Form.Label className="h4">Palindrome Checker</Form.Label>
             <Form.Control
               required

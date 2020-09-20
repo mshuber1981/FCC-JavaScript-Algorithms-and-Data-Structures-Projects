@@ -66,10 +66,7 @@ const ValidPhoneNumber = () => {
           validated={validated}
           onSubmit={handleSubmit}
         >
-          <Form.Group
-            className="align-items-center"
-            controlId="palindromeChecker"
-          >
+          <Form.Group className="align-items-center">
             <Form.Label className="h4">
               Is it a valid US phone number format?
             </Form.Label>
