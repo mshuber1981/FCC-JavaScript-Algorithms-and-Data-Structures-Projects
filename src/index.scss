@@ -4,27 +4,31 @@
 
 /* ----------- iPhone 6 - X (Landscape) ----------- */
 @include iphoneLandscape() {
-  .palindrome {
-    padding: 13rem 0 4rem 0;
-  }
   .roman,
   .rot13,
   .phone {
     padding: 17rem 0 4rem 0;
   }
+  .palindrome {
+    padding: 13rem 0 4rem 0;
+  }
+  .register {
+    padding: 22rem 0 4rem 0;
+  }
 }
 
 /* ----------- iPhone 5, 5S, 5C, 5SE and up (Portrait and Landscape) ----------- */
 @include iphone5() {
-  .palindrome {
-    padding: 5rem 0 4rem 0;
-  }
   .roman,
   .rot13 {
     padding: 14rem 0 5rem 0;
   }
-  .phone {
+  .phone,
+  .register {
     padding: 21rem 0 5rem 0;
+  }
+  .palindrome {
+    padding: 5rem 0 4rem 0;
   }
 }
 
@@ -34,5 +38,8 @@
   .rot13,
   .phone {
     padding: 19rem 0 4rem 0;
+  }
+  .register {
+    padding: 22rem 0 4rem 0;
   }
 }

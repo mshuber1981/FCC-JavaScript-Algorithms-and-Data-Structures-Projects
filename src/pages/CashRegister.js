@@ -113,12 +113,12 @@ const CashRegister = () => {
 
   return (
     <section className="container">
-      <div className="phone d-flex flex-column vh-100 align-items-center justify-content-center text-center bg-light overflow-auto">
+      <div className="register d-flex flex-column vh-100 align-items-center justify-content-center text-center bg-light overflow-auto">
         <div className="container my-5">
           <Table responsive variant="dark">
             <thead>
               <tr>
-                <th></th>
+                <th>Cash Register</th>
                 {register.map((item, id1) => (
                   <td key={id1}>{item[0]}</td>
                 ))}
@@ -149,7 +149,7 @@ const CashRegister = () => {
               required
               type="number"
               step="0.01"
-              placeholder="Enter phone number to check"
+              placeholder="Enter payment amount"
               onChange={handleInputChange}
               className="my-3 mx-auto w-75 text-center"
             />
