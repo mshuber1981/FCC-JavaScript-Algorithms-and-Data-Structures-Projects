@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "FCC Project",
+  "name": "FCC JavaScript Algorithms and Data Structures Projects",
   "icons": [
     {
       "src": "fcc.jpg",
