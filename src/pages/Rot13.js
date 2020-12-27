@@ -39,8 +39,8 @@ const Rot13 = () => {
 
   return (
     <section className="container">
-      <div className="rot13 d-flex flex-column vh-100 align-items-center justify-content-center text-center bg-light overflow-auto">
-        <CardDeck className="m-3">
+      <div id="rot13" className="d-flex flex-column min-vh-100 align-items-center justify-content-center bg-light text-center">
+        <CardDeck>
           <Card>
             <Card.Body>
               <Card.Title>What is ROT13?</Card.Title>
@@ -62,7 +62,7 @@ const Rot13 = () => {
         </CardDeck>
 
         <Form
-          className="my-3 w-100"
+          className="w-100"
           noValidate
           validated={validated}
           onSubmit={handleSubmit}

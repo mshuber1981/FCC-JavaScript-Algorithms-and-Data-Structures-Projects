@@ -34,8 +34,8 @@ const Palindrome = () => {
 
   return (
     <section className="container">
-      <div className="palindrome d-flex flex-column vh-100 align-items-center justify-content-center text-center bg-light overflow-auto">
-        <CardDeck className="my-3">
+      <div id="palindrome" className="d-flex flex-column min-vh-100 align-items-center justify-content-center bg-light text-center">
+        <CardDeck>
           <Card>
             <Card.Body>
               <Card.Title>What is a Palindrome?</Card.Title>
@@ -55,7 +55,7 @@ const Palindrome = () => {
         </CardDeck>
 
         <Form
-          className="my-3 w-100"
+          className="w-100"
           noValidate
           validated={validated}
           onSubmit={handleSubmit}

@@ -113,8 +113,8 @@ const CashRegister = () => {
 
   return (
     <section className="container">
-      <div className="register d-flex flex-column vh-100 align-items-center justify-content-center text-center bg-light overflow-auto">
-        <div className="container my-5">
+      <div id="register" className="d-flex flex-column min-vh-100 align-items-center justify-content-center bg-light text-center">
+        <div className="container">
           <Table responsive variant="dark">
             <thead>
               <tr>
@@ -136,7 +136,7 @@ const CashRegister = () => {
         </div>
 
         <Form
-          className="my-3 w-100"
+          className="w-100"
           noValidate
           validated={validated}
           onSubmit={handleSubmit}

@@ -1,45 +1,160 @@
-@import "scss/mixins.scss";
-
-// Media Queries
-
-/* ----------- iPhone 6 - X (Landscape) ----------- */
-@include iphoneLandscape() {
-  .roman,
-  .rot13,
-  .phone {
-    padding: 17rem 0 4rem 0;
-  }
-  .palindrome {
-    padding: 13rem 0 4rem 0;
-  }
-  .register {
-    padding: 22rem 0 4rem 0;
-  }
+/* General
+************************************************************** */
+.card-deck {
+  margin: 0 1rem 0 1rem;
+}
+form {
+  margin-top: 2rem;
+}
+.lead {
+  margin: 3rem 0 3rem 0;
 }
 
-/* ----------- iPhone 5, 5S, 5C, 5SE and up (Portrait and Landscape) ----------- */
-@include iphone5() {
-  .roman,
-  .rot13 {
-    padding: 14rem 0 5rem 0;
+/* Media Queries
+************************************************************** */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  #palindrome {
+    .card-deck {
+      margin-top: 4.25rem;
+    }
+    form {
+      margin-bottom: 6rem;
+    }
   }
-  .phone,
-  .register {
-    padding: 21rem 0 5rem 0;
+  #roman {
+    .card-deck {
+      margin-top: 4rem;
+    }
+    form {
+      margin-bottom: 5rem;
+    }
   }
-  .palindrome {
-    padding: 5rem 0 4rem 0;
+  #rot13 {
+    .card-deck {
+      margin-top: 4rem;
+    }
+    form {
+      margin-bottom: 5rem;
+    }
+  }
+  #phone {
+    .card-deck {
+      margin-top: 4rem;
+    }
+    form {
+      margin-bottom: 5rem;
+    }
+  }
+  #register {
+    table {
+      margin-top: 4rem;
+    }
+    form {
+      margin-bottom: 6rem;
+    }
   }
 }
-
-@include iphone5Landscape() {
-  .palindrome,
-  .roman,
-  .rot13,
-  .phone {
-    padding: 19rem 0 4rem 0;
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
+  #home {
+    h1 {
+      font-size: 3rem;
+    }
+    .lead {
+      margin: 1rem 0 1rem 0;
+    }
   }
-  .register {
-    padding: 22rem 0 4rem 0;
+  #palindrome {
+    .card-deck {
+      margin-top: 4.25rem;
+    }
+    form {
+      margin-bottom: 6rem;
+    }
+  }
+  #roman {
+    .card-deck {
+      margin-top: 4rem;
+    }
+    form {
+      margin-bottom: 5rem;
+    }
+  }
+  #rot13 {
+    .card-deck {
+      margin-top: 4rem;
+    }
+    form {
+      margin-bottom: 5rem;
+    }
+  }
+  #phone {
+    .card-deck {
+      margin-top: 4rem;
+    }
+    form {
+      margin-bottom: 5rem;
+    }
+  }
+  #register {
+    table {
+      margin-top: 4rem;
+    }
+    form {
+      margin-bottom: 6rem;
+    }
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (orientation: landscape) {
+  .navbar {
+    max-height: 75vh;
+    overflow-y: auto;
+  }
+  #home {
+    h1 {
+      font-size: 2rem;
+    }
+    .lead {
+      margin: 0.5rem 0 0.5rem 0;
+    }
+  }
+  #palindrome {
+    .card-deck {
+      margin-top: 4.25rem;
+    }
+    form {
+      margin-bottom: 6rem;
+    }
+  }
+  #roman {
+    .card-deck {
+      margin-top: 4rem;
+    }
+    form {
+      margin-bottom: 5rem;
+    }
+  }
+  #rot13 {
+    .card-deck {
+      margin-top: 4rem;
+    }
+    form {
+      margin-bottom: 5rem;
+    }
+  }
+  #phone {
+    .card-deck {
+      margin-top: 4rem;
+    }
+    form {
+      margin-bottom: 5rem;
+    }
+  }
+  #register {
+    table {
+      margin-top: 4rem;
+    }
+    form {
+      margin-bottom: 6rem;
+    }
   }
 }

@@ -37,8 +37,8 @@ const ValidPhoneNumber = () => {
 
   return (
     <section className="container">
-      <div className="phone d-flex flex-column vh-100 align-items-center justify-content-center text-center bg-light overflow-auto">
-        <CardDeck className="m-3">
+      <div id="phone" className="d-flex flex-column min-vh-100 align-items-center justify-content-center bg-light text-center">
+        <CardDeck>
           <Card>
             <Card.Body>
               <Card.Title>What is NANP?</Card.Title>
@@ -61,7 +61,7 @@ const ValidPhoneNumber = () => {
         </CardDeck>
 
         <Form
-          className="my-3 w-100"
+          className="w-100"
           noValidate
           validated={validated}
           onSubmit={handleSubmit}
@@ -77,7 +77,7 @@ const ValidPhoneNumber = () => {
               onChange={handleInputChange}
               className="my-3 mx-auto w-75 text-center"
             />
-            <Form.Control.Feedback type="invalid">
+            <Form.Control.Feedback className="px-1" type="invalid">
               Please enter a valid phone number (example 5555555555 or
               555-555-5555).
             </Form.Control.Feedback>
@@ -86,11 +86,11 @@ const ValidPhoneNumber = () => {
             Submit
           </Button>
           {!submitted ? null : submitted && !phoneCheck ? (
-            <h4 className="text-danger">
+            <h4 className="text-danger px-1">
               {inputCopy} is not a valid US phone number.
             </h4>
           ) : (
-            <h4 className="text-success">
+            <h4 className="text-success px-1">
               {inputCopy} is a valid US phone number.
             </h4>
           )}

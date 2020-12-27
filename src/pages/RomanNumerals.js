@@ -66,8 +66,8 @@ const RomanNumberals = () => {
 
   return (
     <section className="container">
-      <div className="roman d-flex flex-column vh-100 align-items-center justify-content-center text-center bg-light overflow-auto">
-        <CardDeck className="m-3">
+      <div id="roman" className="d-flex flex-column min-vh-100 align-items-center justify-content-center bg-light text-center">
+        <CardDeck>
           <Card>
             <Card.Body>
               <Card.Title>What is a Roman Numeral?</Card.Title>
@@ -88,13 +88,13 @@ const RomanNumberals = () => {
         </CardDeck>
 
         <Form
-          className="my-3 w-100"
+          className="w-100"
           noValidate
           validated={validated}
           onSubmit={handleSubmit}
         >
           <Form.Group className="align-items-center">
-            <Form.Label className="h4">Roman Numeral Converter</Form.Label>
+            <Form.Label className="h4 px-2">Roman Numeral Converter</Form.Label>
             <Form.Control
               required
               type="number"
