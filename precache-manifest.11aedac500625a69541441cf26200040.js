@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9e10b84145ce92bbe7d1f8f6fe4f886e",
+    "revision": "ada1c704a753079d4109e7ec914e59a1",
     "url": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "672a24bd6794297fcfaa",
+    "revision": "31f281d197b4c1ee482c",
     "url": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/css/main.7fa7c898.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/js/2.918b7645.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "672a24bd6794297fcfaa",
-    "url": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/js/main.6340add0.chunk.js"
+    "revision": "31f281d197b4c1ee482c",
+    "url": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/js/main.da53c75a.chunk.js"
   },
   {
     "revision": "8bab359f6488abd38e8e",
