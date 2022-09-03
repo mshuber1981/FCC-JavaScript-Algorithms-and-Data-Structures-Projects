@@ -1,15 +1,16 @@
 import React from "react";
-import ReactDOM from "react-dom";
-// https://reactrouter.com/web/guides/quick-start (using HashRouter so custom 404 will work with GitHub Pages)
-import { HashRouter as Router } from "react-router-dom";
-// https://getbootstrap.com/docs/4.5/getting-started/introduction/
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./index.scss";
+import ReactDOM from "react-dom/client";
+// https://reactjs.org/docs/context.html
+import { AppProvider } from "./appContext";
+// https://create-react-app.dev/docs/adding-bootstrap
+import "bootstrap/dist/css/bootstrap.css";
 import App from "./App";
 
-ReactDOM.render(
-  <Router>
+// https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
+  <AppProvider>
     <App />
-  </Router>,
-  document.getElementById("root")
+  </AppProvider>
 );
