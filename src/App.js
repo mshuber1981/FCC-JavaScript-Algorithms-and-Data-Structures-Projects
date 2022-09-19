@@ -3,7 +3,6 @@ import { useAppContext } from "./appContext";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 // Components
-import ScrollToTop from "./components/ScrollToTop";
 import GlobalStyles from "./components/GlobalStyles";
 import { NavBar } from "./components/globalStyledComponents";
 // Pages
@@ -44,7 +43,6 @@ export default function App() {
 
   return (
     <HashRouter>
-      <ScrollToTop />
       <ThemeProvider theme={themes[theme]}>
         <GlobalStyles />
         <NavBar />
