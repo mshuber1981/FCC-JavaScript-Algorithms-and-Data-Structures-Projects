@@ -147,7 +147,6 @@ export function ThemeToggle() {
 export const Title = styled.div`
   display: inline-block;
   margin: 0 auto;
-  font-family: "Permanent Marker";
   text-align: center;
 
   .underline {
