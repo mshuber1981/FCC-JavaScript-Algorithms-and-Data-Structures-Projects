@@ -1,15 +1,11 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+// Components
 
 export default function Home() {
   return (
     <>
       <main>
-        <section>
-          <Container>
-            <h1>Home</h1>
-          </Container>
-        </section>
+        <section className="section"></section>
       </main>
     </>
   );

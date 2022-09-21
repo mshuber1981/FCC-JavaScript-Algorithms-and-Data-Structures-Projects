@@ -8,6 +8,11 @@ import { NavBar } from "./components/globalStyledComponents";
 // Pages
 import Home from "./pages/Home";
 import Palindrome from "./pages/Palindrome";
+import RomanNumerals from "./pages/RomanNumerals";
+import ROT13 from "./pages/ROT13";
+import ValidPhoneNumber from "./pages/ValidPhoneNumber";
+import CashRegister from "./pages/CashRegister";
+import NotFound from "./pages/NotFound";
 
 const darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
 const themes = {
@@ -49,8 +54,11 @@ export default function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/Palindrome-Checker" element={<Palindrome />} />
-          {/* <Route path="/Route1" element={<Route1 />} />
-            <Route path="*" element={<NotFound />} /> */}
+          <Route path="/Roman-Numeral-Converter" element={<RomanNumerals />} />
+          <Route path="/ROT13" element={<ROT13 />} />
+          <Route path="/Valid-Phone-Number" element={<ValidPhoneNumber />} />
+          <Route path="/Cash-Register" element={<CashRegister />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </ThemeProvider>
     </HashRouter>
