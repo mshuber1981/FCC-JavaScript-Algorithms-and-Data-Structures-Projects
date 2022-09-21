@@ -28,10 +28,11 @@ body {
 }
 
 .section {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  padding: var(--nav-height) 0;
+  min-height: calc(100vh - var(--nav-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 a:hover {
