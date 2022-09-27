@@ -51,7 +51,7 @@ export function NavBar() {
         <Container>
           <Navbar.Brand>
             <img
-              alt="React Logo"
+              alt="Free Code Camp Logo"
               src={FCC}
               width="35"
               height="35"
