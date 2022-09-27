@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components";
 // Components
 import GlobalStyles from "./components/GlobalStyles";
 import { NavBar } from "./components/globalStyledComponents";
+import Footer from "./components/Footer";
 // Pages
 import Home from "./pages/Home";
 import Palindrome from "./pages/Palindrome";
@@ -60,6 +61,7 @@ export default function App() {
           <Route path="/Cash-Register" element={<CashRegister />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </ThemeProvider>
     </HashRouter>
   );
