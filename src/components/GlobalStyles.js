@@ -13,7 +13,7 @@ Variables
   --primary: #006400;
   --primary-dark: #003200;
   --nav-height: 61px;
-  --min-footer-height: 11vh;
+  --min-footer-height: 7vh;
   --transition: all 0.3s linear;
 }
 
@@ -28,7 +28,7 @@ body {
 }
 
 .section {
-  min-height: calc(100vh - var(--nav-height));
+  min-height: calc(93vh - var(--nav-height));
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,10 +43,10 @@ a:hover {
   line-height: 0;
   font-size: 2.25rem;
   transition: var(--transition);
-  color: ${({ theme }) => theme.color};
+  color: #FBFDFF;
 
   &:hover {
-        color: var(--primary);
+        color: #45413C;
       }
 }
 `;
