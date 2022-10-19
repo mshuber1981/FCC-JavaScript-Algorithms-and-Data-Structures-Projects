@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Palindrome from "./pages/Palindrome";
 import RomanNumerals from "./pages/RomanNumerals";
-import ROT13 from "./pages/ROT13";
+import CaesarsCipher from "./pages/CaesarsCipher";
 import ValidPhoneNumber from "./pages/ValidPhoneNumber";
 import CashRegister from "./pages/CashRegister";
 import NotFound from "./pages/NotFound";
@@ -56,8 +56,11 @@ export default function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="/Palindrome-Checker" element={<Palindrome />} />
           <Route path="/Roman-Numeral-Converter" element={<RomanNumerals />} />
-          <Route path="/ROT13" element={<ROT13 />} />
-          <Route path="/Valid-Phone-Number" element={<ValidPhoneNumber />} />
+          <Route path="/Caesars-Cipher" element={<CaesarsCipher />} />
+          <Route
+            path="/Telephone-Number-Validator"
+            element={<ValidPhoneNumber />}
+          />
           <Route path="/Cash-Register" element={<CashRegister />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
