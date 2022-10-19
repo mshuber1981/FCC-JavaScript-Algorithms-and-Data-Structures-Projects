@@ -32,6 +32,39 @@ export const FixedNavSpacer = styled.div`
   height: var(--nav-height);
 `;
 
+const navLinks = [
+  {
+    id: 1,
+    name: "Home",
+    route: "/",
+  },
+  {
+    id: 2,
+    name: "Palindrome Checker",
+    route: "/Palindrome-Checker",
+  },
+  {
+    id: 3,
+    name: "Roman Numeral Converter",
+    route: "/Roman-Numeral-Converter",
+  },
+  {
+    id: 4,
+    name: "Caesars Cipher",
+    route: "/Caesars-Cipher",
+  },
+  {
+    id: 5,
+    name: "Telephone Number Validator",
+    route: "/Telephone-Number-Validator",
+  },
+  {
+    id: 6,
+    name: "Cash Register",
+    route: "/Cash-Register",
+  },
+];
+
 export function NavBar() {
   const { isExpanded, toggleExpanded, closeExpanded } = useAppContext();
   const { pathname } = useLocation();
@@ -42,7 +75,7 @@ export function NavBar() {
       <Navbar
         id="nav"
         collapseOnSelect={true}
-        expand="lg"
+        expand="xl"
         expanded={isExpanded}
         bg="success"
         variant="dark"
@@ -64,7 +97,22 @@ export function NavBar() {
           />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav navbarScroll className="me-auto">
-              <Nav.Item>
+              {navLinks.map((el) => {
+                return (
+                  <Nav.Item key={el.id}>
+                    <Link
+                      to={el.route}
+                      className={
+                        pathname === el.route ? "nav-link active" : "nav-link"
+                      }
+                      onClick={closeExpanded}
+                    >
+                      {el.name}
+                    </Link>
+                  </Nav.Item>
+                );
+              })}
+              {/* <Nav.Item>
                 <Link
                   to="/"
                   className={pathname === "/" ? "nav-link active" : "nav-link"}
@@ -85,7 +133,7 @@ export function NavBar() {
                 >
                   Palindrome Checker
                 </Link>
-              </Nav.Item>
+              </Nav.Item> */}
             </Nav>
             <Nav>
               <ThemeToggle />
