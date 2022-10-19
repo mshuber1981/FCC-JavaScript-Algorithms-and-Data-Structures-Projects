@@ -10,7 +10,7 @@ export default function ValidPhoneNumber() {
         <section className="section">
           <Container className="d-flex">
             <Title>
-              <h2>Valid Phone Number</h2>
+              <h2>Telephone Number Validator</h2>
               <div className="underline"></div>
             </Title>
           </Container>
