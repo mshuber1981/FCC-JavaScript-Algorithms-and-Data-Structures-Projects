@@ -4,7 +4,8 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 // Components
 import GlobalStyles from "./components/GlobalStyles";
-import { NavBar } from "./components/globalStyledComponents";
+// import { NavBar } from "./components/globalStyledComponents";
+import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 // Pages
 import Home from "./pages/Home";
@@ -28,6 +29,38 @@ const themes = {
     background: "#27272A",
   },
 };
+const navLinks = [
+  {
+    id: 1,
+    name: "Home",
+    route: "/",
+  },
+  {
+    id: 2,
+    name: "Palindrome Checker",
+    route: "/Palindrome-Checker",
+  },
+  {
+    id: 3,
+    name: "Roman Numeral Converter",
+    route: "/Roman-Numeral-Converter",
+  },
+  {
+    id: 4,
+    name: "Caesars Cipher",
+    route: "/Caesars-Cipher",
+  },
+  {
+    id: 5,
+    name: "Telephone Number Validator",
+    route: "/Telephone-Number-Validator",
+  },
+  {
+    id: 6,
+    name: "Cash Register",
+    route: "/Cash-Register",
+  },
+];
 
 export default function App() {
   const { theme, setTheme } = useAppContext();
@@ -51,7 +84,7 @@ export default function App() {
     <HashRouter>
       <ThemeProvider theme={themes[theme]}>
         <GlobalStyles />
-        <NavBar />
+        <NavBar navLinks={navLinks} />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/Palindrome-Checker" element={<Palindrome />} />
