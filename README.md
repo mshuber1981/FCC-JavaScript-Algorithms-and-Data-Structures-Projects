@@ -1,9 +1,9 @@
 # FCC JavaScript Algorithms and Data Structures Projects
 
-My <a href="https://www.freecodecamp.org">freecodecamp.org</a> JavaScript Algorithms and Data Structures Projects.
+My [freecodecamp.org](https://www.freecodecamp.org) JavaScript Algorithms and Data Structures Projects.
 
-See my profile <a href="https://www.freecodecamp.org/mshuber1981">here</a>.
+See my profile [here](https://www.freecodecamp.org/mshuber1981).
 
-### <a href="https://mshuber1981.github.io/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/">LIVE DEMO</a>
+## [LIVE DEMO](https://mshuber1981.github.io/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/)
 
-![Certificate](fcc.png)
+![Certificate](./public/fcc.png)
