@@ -33,8 +33,14 @@ root.render(
           property="og:description"
           content="My freecodecamp.org JavaScript Algorithms and Data Structures projects."
         />
-        <meta property="og:site_name" content="CRA Starter" />
-        <meta name="twitter:image:alt" content="Create React App" />
+        <meta
+          property="og:site_name"
+          content="freecodecamp.org JavaScript Algorithms and Data Structures projects"
+        />
+        <meta
+          name="twitter:image:alt"
+          content="freecodecamp.org JavaScript Algorithms and Data Structures certificate"
+        />
       </Helmet>
       <App />
     </HelmetProvider>
