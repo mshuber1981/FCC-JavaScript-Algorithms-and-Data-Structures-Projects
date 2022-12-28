@@ -2,6 +2,7 @@ import React from "react";
 import { useAppContext } from "../appContext";
 import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 // Icons
 import { GiSunflower, GiMoon } from "react-icons/gi";
 import FCC from "../media/free-code-camp.svg";
@@ -116,3 +117,7 @@ export default function NavBar({ navLinks }) {
     </>
   );
 }
+
+NavBar.propTypes = {
+  navLinks: PropTypes.arrayOf(PropTypes.object),
+};

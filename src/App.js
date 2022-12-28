@@ -4,7 +4,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 // Components
 import GlobalStyles from "./components/GlobalStyles";
-// import { NavBar } from "./components/globalStyledComponents";
+import { Container } from "react-bootstrap";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 // Pages
@@ -85,18 +85,25 @@ export default function App() {
       <ThemeProvider theme={themes[theme]}>
         <GlobalStyles />
         <NavBar navLinks={navLinks} />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/Palindrome-Checker" element={<Palindrome />} />
-          <Route path="/Roman-Numeral-Converter" element={<RomanNumerals />} />
-          <Route path="/Caesars-Cipher" element={<CaesarsCipher />} />
-          <Route
-            path="/Telephone-Number-Validator"
-            element={<ValidPhoneNumber />}
-          />
-          <Route path="/Cash-Register" element={<CashRegister />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <main>
+          <Container>
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route path="/Palindrome-Checker" element={<Palindrome />} />
+              <Route
+                path="/Roman-Numeral-Converter"
+                element={<RomanNumerals />}
+              />
+              <Route path="/Caesars-Cipher" element={<CaesarsCipher />} />
+              <Route
+                path="/Telephone-Number-Validator"
+                element={<ValidPhoneNumber />}
+              />
+              <Route path="/Cash-Register" element={<CashRegister />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Container>
+        </main>
         <Footer />
       </ThemeProvider>
     </HashRouter>
