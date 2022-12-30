@@ -49,6 +49,11 @@ a:hover {
         color: #45413C;
       }
 }
+
+form {
+  width: 100%;
+  max-width: 30rem;
+}
 `;
 
 export default GlobalStyles;

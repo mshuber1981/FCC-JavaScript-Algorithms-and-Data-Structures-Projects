@@ -1,15 +1,18 @@
 import React from "react";
 // Components
-import SEO from "../components/SEO";
 import { Container } from "react-bootstrap";
 import { Title } from "../components/globalStyledComponents";
 
 export default function RomanNumerals() {
   const pageTitle = "Roman Numeral Converter";
 
+  React.useEffect(() => {
+    const updateTitle = () => (document.title = pageTitle);
+    updateTitle();
+  }, []);
+
   return (
     <>
-      <SEO title={pageTitle} />
       <section className="section">
         <Container className="d-flex">
           <Title>

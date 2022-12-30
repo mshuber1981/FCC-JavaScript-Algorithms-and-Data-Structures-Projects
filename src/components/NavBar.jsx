@@ -4,8 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 // Icons
-import { GiSunflower, GiMoon } from "react-icons/gi";
-import FCC from "../media/free-code-camp.svg";
+import { Icon } from "@iconify/react";
 // Components
 import { Container, Nav, Navbar } from "react-bootstrap";
 
@@ -55,7 +54,13 @@ function ThemeToggle() {
         aria-label={`Toggle theme, currently ${theme}.`}
         onClick={toggleTheme}
       />
-      <div>{theme === "light" ? <GiSunflower /> : <GiMoon />}</div>
+      <div>
+        {theme === "light" ? (
+          <Icon icon="game-icons:sunflower" />
+        ) : (
+          <Icon icon="game-icons:moon" />
+        )}
+      </div>
     </StyledSwitch>
   );
 }
@@ -78,13 +83,7 @@ export default function NavBar({ navLinks }) {
       >
         <Container>
           <Navbar.Brand>
-            <img
-              alt="Free Code Camp Logo"
-              src={FCC}
-              width="35"
-              height="35"
-              className="d-inline-block align-top rounded-circle nav-logo"
-            />
+            <Icon icon="fa-brands:free-code-camp" width="35" height="35" />
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"

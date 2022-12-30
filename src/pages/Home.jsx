@@ -1,16 +1,20 @@
 import React from "react";
-// Components
-import SEO from "../components/SEO";
 // Images
-import w_200 from "../media/fcc_iklhbn_ar_16_9,c_fill,g_auto__c_scale,w_200.png";
-import w_1137 from "../media/fcc_iklhbn_ar_16_9,c_fill,g_auto__c_scale,w_1137.png";
-import w_480 from "../media/fcc_iklhbn_c_scale,w_480.png";
-import w_1280 from "../media/fcc_iklhbn_c_scale,w_1280.png";
+import w_350 from "../media/fcc_iznpde_ar_16_9,c_fill,g_auto__c_scale,w_350.png";
+import w_1137 from "../media/fcc_iznpde_ar_16_9,c_fill,g_auto__c_scale,w_1137.png";
+import w_480 from "../media/fcc_iznpde_c_scale,w_480.png";
+import w_1280 from "../media/fcc_iznpde_c_scale,w_1280.png";
 
 export default function Home() {
+  const pageTitle = "FCC JS Algos and DS";
+
+  React.useEffect(() => {
+    const updateTitle = () => (document.title = pageTitle);
+    updateTitle();
+  }, []);
+
   return (
     <>
-      <SEO title={"FCC JS Algos and DS"} />
       <section className="section">
         <p className="text-center">
           Thanks for checking out my spin on the{" "}
@@ -20,8 +24,8 @@ export default function Home() {
         <picture className="mb-3">
           <source
             media="(max-width: 1199px)"
-            sizes="(max-width: 1895px) 60vw, 1137px"
-            srcSet={`${w_200} 200w, ${w_1137} 1137w`}
+            sizes="(max-width: 1895px) 75vw, 1137px"
+            srcSet={`${w_350} 350w, ${w_1137} 1137w`}
           />
           <img
             sizes="(max-width: 3200px) 40vw, 1280px"

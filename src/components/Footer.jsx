@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 // Icons
-import { FaGithub, FaFreeCodeCamp } from "react-icons/fa";
+import { Icon } from "@iconify/react";
 
 const StyledFooter = styled.footer`
   min-height: var(--min-footer-height);
@@ -20,7 +20,7 @@ export default function Footer() {
         aria-label="Check out my GitHub profile."
         className="link-icons"
       >
-        <FaGithub />
+        <Icon icon="fa:github" />
       </a>
 
       <a
@@ -28,7 +28,7 @@ export default function Footer() {
         aria-label="Check out my Free Code Camp profile."
         className="link-icons"
       >
-        <FaFreeCodeCamp />
+        <Icon icon="fa-brands:free-code-camp" />
       </a>
     </StyledFooter>
   );

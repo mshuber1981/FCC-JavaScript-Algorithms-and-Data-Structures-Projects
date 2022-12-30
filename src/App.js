@@ -65,14 +65,10 @@ const navLinks = [
 export default function App() {
   const { theme, setTheme } = useAppContext();
 
-  React.useEffect(
-    function () {
-      const updateTheme = () =>
-        darkMode ? setTheme("dark") : setTheme("light");
-      updateTheme();
-    },
-    [setTheme]
-  );
+  React.useEffect(() => {
+    const updateTheme = () => (darkMode ? setTheme("dark") : setTheme("light"));
+    updateTheme();
+  }, [setTheme]);
 
   window
     .matchMedia("(prefers-color-scheme: dark)")
