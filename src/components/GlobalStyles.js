@@ -50,6 +50,10 @@ a:hover {
       }
 }
 
+.description {
+  max-width: 55rem;
+}
+
 form {
   width: 100%;
   max-width: 30rem;

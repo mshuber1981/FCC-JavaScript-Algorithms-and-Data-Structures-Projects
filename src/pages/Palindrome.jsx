@@ -48,7 +48,7 @@ export default function Palindrome() {
             <div className="underline"></div>
           </Title>
         </Container>
-        <p>
+        <p className="description">
           A palindrome is a word, number, phrase, or other sequence of
           characters which reads the same backward as forward.
         </p>
