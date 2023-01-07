@@ -40,3 +40,15 @@ export function convertToRoman(num) {
 
   return str;
 }
+
+// https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/caesars-cipher
+export function rot13(str) {
+  const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  return str
+    .split("")
+    .map((char) => {
+      const pos = alphabet.indexOf(char);
+      return pos >= 0 ? alphabet[(pos + 13) % 26] : char;
+    })
+    .join("");
+}
