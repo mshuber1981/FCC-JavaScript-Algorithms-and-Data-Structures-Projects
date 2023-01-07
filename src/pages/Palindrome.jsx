@@ -52,13 +52,8 @@ export default function Palindrome() {
           A palindrome is a word, number, phrase, or other sequence of
           characters which reads the same backward as forward.
         </p>
-        <Form
-          className=""
-          noValidate
-          validated={validated}
-          onSubmit={handleSubmit}
-        >
-          <Form.Group className="align-items-center">
+        <Form noValidate validated={validated} onSubmit={handleSubmit}>
+          <Form.Group>
             <Form.Control
               required
               type="text"
