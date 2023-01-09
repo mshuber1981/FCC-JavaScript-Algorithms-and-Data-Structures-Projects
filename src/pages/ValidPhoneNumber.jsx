@@ -1,4 +1,5 @@
 import React from "react";
+import { useAppContext } from "../appContext";
 // Algos
 import { telephoneCheck } from "../algos";
 // Components
@@ -11,6 +12,7 @@ export default function ValidPhoneNumber() {
   const [submitted, setSubmit] = React.useState(false);
   const [inputCopy, setInputCopy] = React.useState("");
   const [phoneCheck, setPhoneCheck] = React.useState("");
+  const { theme } = useAppContext();
 
   const pageTitle = "Telephone Number Validator";
 
@@ -40,7 +42,7 @@ export default function ValidPhoneNumber() {
 
   return (
     <>
-      <section className="section">
+      <section className="section text-center">
         <Container className="d-flex">
           <Title>
             <h2>{pageTitle}</h2>
@@ -54,6 +56,36 @@ export default function ValidPhoneNumber() {
           Some North American countries, most notably Mexico, do not participate
           in the NANP.
         </p>
+        <Form noValidate validated={validated} onSubmit={handleSubmit}>
+          <Form.Group className="my-4">
+            <Form.Control
+              required
+              type="tel"
+              placeholder="Enter phone number to check"
+              onChange={handleInputChange}
+              className="my-4"
+            />
+            <Form.Control.Feedback className="" type="invalid">
+              Please enter a valid phone number (example 5555555555 or
+              555-555-5555).
+            </Form.Control.Feedback>
+          </Form.Group>
+          <Button
+            variant={theme === "light" ? "outline-dark" : "outline-light"}
+            type="submit"
+          >
+            Submit
+          </Button>
+          {!submitted ? null : submitted && !phoneCheck ? (
+            <h4 className="my-4 text-danger">
+              {inputCopy} is not a valid US phone number
+            </h4>
+          ) : (
+            <h4 className="my-4 text-success">
+              {inputCopy} is a valid US phone number
+            </h4>
+          )}
+        </Form>
       </section>
     </>
   );
