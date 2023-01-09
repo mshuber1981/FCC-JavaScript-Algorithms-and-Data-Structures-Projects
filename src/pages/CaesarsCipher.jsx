@@ -79,18 +79,17 @@ export default function CaesarsCipher() {
               </option>
             </Form.Select>
             <Form.Control.Feedback type="invalid">
-              Please select a phrase to decode.
+              Please select a phrase to decode
             </Form.Control.Feedback>
           </Form.Group>
           <Button
             variant={theme === "light" ? "outline-dark" : "outline-light"}
             type="submit"
-            className="mb-4"
           >
             Submit
           </Button>
           {submitted ? (
-            <h4 className="text-success">
+            <h4 className="my-4 text-success">
               {inputCopy} = {encoded}
             </h4>
           ) : null}

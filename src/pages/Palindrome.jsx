@@ -53,7 +53,7 @@ export default function Palindrome() {
           characters which reads the same backward as forward.
         </p>
         <Form noValidate validated={validated} onSubmit={handleSubmit}>
-          <Form.Group>
+          <Form.Group className="my-4">
             <Form.Control
               required
               type="text"
@@ -68,14 +68,16 @@ export default function Palindrome() {
           <Button
             variant={theme === "light" ? "outline-dark" : "outline-light"}
             type="submit"
-            className="mb-4"
+            className=""
           >
             Submit
           </Button>
           {!submitted ? null : submitted && !palindrome ? (
-            <h4 className="text-danger">{inputCopy} is not a palindrome</h4>
+            <h4 className="my-4 text-danger">
+              {inputCopy} is not a palindrome
+            </h4>
           ) : (
-            <h4 className="text-success">{inputCopy} is a palindrome</h4>
+            <h4 className="my-4 text-success">{inputCopy} is a palindrome</h4>
           )}
         </Form>
       </section>

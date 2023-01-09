@@ -54,33 +54,27 @@ export default function RomanNumerals() {
           and remained the usual way of writing numbers throughout Europe well
           into the Late Middle Ages.
         </p>
-        <Form
-          className="w-100"
-          noValidate
-          validated={validated}
-          onSubmit={handleSubmit}
-        >
-          <Form.Group>
+        <Form noValidate validated={validated} onSubmit={handleSubmit}>
+          <Form.Group className="my-4">
             <Form.Control
               required
               type="number"
               placeholder="Enter number to convert"
               onChange={handleInputChange}
-              className="my-4 mx-auto text-center"
+              className="my-4"
             />
             <Form.Control.Feedback type="invalid">
-              Please enter at least one number.
+              Please enter at least one number
             </Form.Control.Feedback>
           </Form.Group>
           <Button
             variant={theme === "light" ? "outline-dark" : "outline-light"}
             type="submit"
-            className="mb-4"
           >
             Submit
           </Button>
           {!submitted ? null : submitted ? (
-            <h4 className="text-success">
+            <h4 className="my-4 text-success">
               {inputCopy} = {romans}
             </h4>
           ) : null}
