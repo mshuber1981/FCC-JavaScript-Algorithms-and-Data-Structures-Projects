@@ -59,24 +59,26 @@ export default function CashRegister() {
             <div className="underline"></div>
           </Title>
         </Container>
-        <Table responsive variant={theme === "light" ? "dark" : "light"}>
-          <thead>
-            <tr>
-              <th>Cash Register</th>
-              {register.map((item, id1) => (
-                <td key={id1}>{item[0]}</td>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Amount</td>
-              {register.map((item, id2) => (
-                <td key={id2}>{`$ ${item[1]}`}</td>
-              ))}
-            </tr>
-          </tbody>
-        </Table>
+        <Container>
+          <Table responsive variant={theme === "light" ? "dark" : "light"}>
+            <thead>
+              <tr>
+                <th>Cash Register</th>
+                {register.map((item, id1) => (
+                  <td key={id1}>{item[0]}</td>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Amount</td>
+                {register.map((item, id2) => (
+                  <td key={id2}>{`$ ${item[1]}`}</td>
+                ))}
+              </tr>
+            </tbody>
+          </Table>
+        </Container>
         <Form noValidate validated={validated} onSubmit={handleSubmit}>
           <Form.Group className="my-4">
             <Form.Label className="h4">
