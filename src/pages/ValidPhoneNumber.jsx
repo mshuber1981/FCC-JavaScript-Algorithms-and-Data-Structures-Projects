@@ -65,7 +65,7 @@ export default function ValidPhoneNumber() {
               onChange={handleInputChange}
               className="my-4"
             />
-            <Form.Control.Feedback className="" type="invalid">
+            <Form.Control.Feedback type="invalid">
               Please enter a valid phone number (example 5555555555 or
               555-555-5555).
             </Form.Control.Feedback>
