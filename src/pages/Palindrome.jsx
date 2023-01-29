@@ -1,18 +1,35 @@
 import React from "react";
 import { useAppContext } from "../appContext";
 // Algos
-import { palindromeAlgo } from "../algos";
+import { palindrome } from "../algos";
 // Components
 import { Button, Form, Container } from "react-bootstrap";
 import { Title } from "../components/globalStyledComponents";
+import CodeModal from "../components/CodeModal";
 
 export default function Palindrome() {
   const [input, setInput] = React.useState("");
   const [validated, setValidated] = React.useState(false);
   const [submitted, setSubmit] = React.useState(false);
-  const [palindrome, checkPalindrome] = React.useState("");
+  const [isPalindrome, checkPalindrome] = React.useState("");
   const [inputCopy, setInputCopy] = React.useState("");
   const { theme } = useAppContext();
+
+  const pageTitle = "Palindrome Checker";
+
+  const code = `
+function palindrome(str) {
+  return (
+        str.replace(/[\\W_]/g, "").toLowerCase() ===
+        str
+            .replace(/[\\W_]/g, "")
+            .toLowerCase()
+            .split("")
+            .reverse()
+            .join("")
+        );
+}  
+`;
 
   const handleInputChange = (event) => setInput(event.target.value);
 
@@ -26,13 +43,12 @@ export default function Palindrome() {
     if (form.checkValidity()) {
       event.preventDefault();
       setSubmit(true);
-      checkPalindrome(palindromeAlgo(input));
+      checkPalindrome(palindrome(input));
       setInputCopy(input);
       setValidated(false);
       event.target.reset();
     }
   }
-  const pageTitle = "Palindrome Checker";
 
   React.useEffect(() => {
     const updateTitle = () => (document.title = pageTitle);
@@ -72,7 +88,7 @@ export default function Palindrome() {
           >
             Submit
           </Button>
-          {!submitted ? null : submitted && !palindrome ? (
+          {!submitted ? null : submitted && !isPalindrome ? (
             <h4 className="my-4 text-danger">
               {inputCopy} is not a palindrome
             </h4>
@@ -80,6 +96,7 @@ export default function Palindrome() {
             <h4 className="my-4 text-success">{inputCopy} is a palindrome</h4>
           )}
         </Form>
+        <CodeModal code={code} />
       </section>
     </>
   );

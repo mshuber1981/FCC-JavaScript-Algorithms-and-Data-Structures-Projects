@@ -21,19 +21,21 @@ export default function Home() {
           <a href="https://www.freecodecamp.org/">freecodecamp.org</a>{" "}
           <b>JavaScript Algorithms and Data Structures</b> projects.
         </p>
-        <picture className="mb-3">
-          <source
-            media="(max-width: 1199px)"
-            sizes="(max-width: 1895px) 75vw, 1137px"
-            srcSet={`${w_350} 350w, ${w_1137} 1137w`}
-          />
-          <img
-            sizes="(max-width: 3200px) 40vw, 1280px"
-            srcSet={`${w_480} 480w, ${w_1280} 1280w`}
-            src={w_1280}
-            alt="freecodecamp.org JavaScript Algorithms and Data Structures certificate"
-          />
-        </picture>
+        <a href="https://www.freecodecamp.org/certification/mshuber1981/javascript-algorithms-and-data-structures">
+          <picture>
+            <source
+              media="(max-width: 1199px)"
+              sizes="(max-width: 1895px) 75vw, 1137px"
+              srcSet={`${w_350} 350w, ${w_1137} 1137w`}
+            />
+            <img
+              sizes="(max-width: 3200px) 40vw, 1280px"
+              srcSet={`${w_480} 480w, ${w_1280} 1280w`}
+              src={w_1280}
+              alt="freecodecamp.org JavaScript Algorithms and Data Structures certificate"
+            />
+          </picture>
+        </a>
       </section>
     </>
   );

@@ -5,6 +5,7 @@ import { telephoneCheck } from "../algos";
 // Components
 import { Button, Container, Form } from "react-bootstrap";
 import { Title } from "../components/globalStyledComponents";
+import CodeModal from "../components/CodeModal";
 
 export default function ValidPhoneNumber() {
   const [input, setInput] = React.useState("");
@@ -15,6 +16,13 @@ export default function ValidPhoneNumber() {
   const { theme } = useAppContext();
 
   const pageTitle = "Telephone Number Validator";
+
+  const code = `
+function telephoneCheck(str) {
+  var regex = /^(1\\s?)?(\\(\\d{3}\\)|\\d{3})[\\s\\-]?\\d{3}[\\s\\-]?\\d{4}$/;
+  return regex.test(str);
+}
+`;
 
   const handleInputChange = (event) => setInput(event.target.value);
 
@@ -86,6 +94,7 @@ export default function ValidPhoneNumber() {
             </h4>
           )}
         </Form>
+        <CodeModal code={code} />
       </section>
     </>
   );

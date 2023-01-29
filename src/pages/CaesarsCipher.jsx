@@ -5,6 +5,7 @@ import { rot13 } from "../algos";
 // Components
 import { Container, Button, Form } from "react-bootstrap";
 import { Title } from "../components/globalStyledComponents";
+import CodeModal from "../components/CodeModal";
 
 export default function CaesarsCipher() {
   const [input, setInput] = React.useState("");
@@ -16,6 +17,19 @@ export default function CaesarsCipher() {
   const { theme } = useAppContext();
 
   const pageTitle = "Caesars Cipher";
+
+  const code = `
+function rot13(str) {
+const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  return str
+    .split('')
+    .map(char => {  
+      const pos = alphabet.indexOf(char);      
+      return pos >= 0 ? alphabet[(pos + 13) % 26] : char;
+    })
+    .join('');
+}
+`;
 
   function handleInputChange(event) {
     setInput(event.target.value);
@@ -94,6 +108,7 @@ export default function CaesarsCipher() {
             </h4>
           ) : null}
         </Form>
+        <CodeModal code={code} />
       </section>
     </>
   );
