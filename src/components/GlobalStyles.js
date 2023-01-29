@@ -13,7 +13,7 @@ Variables
   --primary: #006400;
   --primary-dark: #003200;
   --nav-height: 61.5px;
-  --footer-height: 7.5vh;
+  --footer-height: 8vh;
   --transition: all 0.3s linear;
 }
 
@@ -28,7 +28,7 @@ body, .modal-content {
 }
 
 .section {
-  min-height: calc(92.5vh - var(--nav-height) - 2rem);
+  min-height: calc(92vh - var(--nav-height) - 2rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
