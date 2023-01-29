@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/css/main.ff1c183b.css",
-    "main.js": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/js/main.38a51094.js",
+    "main.js": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/js/main.cb617b0e.js",
     "static/media/fcc_iznpde_c_scale,w_1280.png": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/media/fcc_iznpde_c_scale,w_1280.756faaad6f45e3a8d851.png",
     "static/media/fcc_iznpde_ar_16_9,c_fill,g_auto__c_scale,w_1137.png": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/media/fcc_iznpde_ar_16_9,c_fill,g_auto__c_scale,w_1137.245f3f5386d65d7218ca.png",
     "index.html": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/index.html",
     "main.ff1c183b.css.map": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/css/main.ff1c183b.css.map",
-    "main.38a51094.js.map": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/js/main.38a51094.js.map"
+    "main.cb617b0e.js.map": "/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/static/js/main.cb617b0e.js.map"
   },
   "entrypoints": [
     "static/css/main.ff1c183b.css",
-    "static/js/main.38a51094.js"
+    "static/js/main.cb617b0e.js"
   ]
 }
