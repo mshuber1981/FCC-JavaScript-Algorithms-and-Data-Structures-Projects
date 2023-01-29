@@ -9,11 +9,9 @@ Variables
 :root {
   /* https://brandcolors.net/b/freecodecamp */
   --bs-success-rgb: 0,100,0;
-  --primary-light: #80b280;
   --primary: #006400;
-  --primary-dark: #003200;
-  --nav-height: 61px;
-  --min-footer-height: 7vh;
+  --nav-height: 61.5px;
+  --footer-height: 8vh;
   --transition: all 0.3s linear;
 }
 
@@ -22,17 +20,18 @@ Variables
 Global Styles
 ===============
 */
-body {
+body, .modal-content {
   background: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.color};
 }
 
 .section {
-  min-height: calc(93vh - var(--nav-height));
+  min-height: calc(92vh - var(--nav-height) - 2rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 1rem 0;
 }
 
 a:hover {

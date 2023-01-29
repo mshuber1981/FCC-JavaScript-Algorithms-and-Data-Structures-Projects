@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Icon } from "@iconify/react";
 
 const StyledFooter = styled.footer`
-  min-height: var(--min-footer-height);
+  min-height: var(--footer-height);
   background: var(--primary);
 
   a {
