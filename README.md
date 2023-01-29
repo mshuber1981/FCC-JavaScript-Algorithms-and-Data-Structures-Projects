@@ -6,4 +6,4 @@ See my profile [here](https://www.freecodecamp.org/mshuber1981).
 
 ## [LIVE DEMO](https://mshuber1981.github.io/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/)
 
-![Certificate](./public/fcc.png)
+[![Certificate](./public/fcc.png)](https://www.freecodecamp.org/certification/mshuber1981/javascript-algorithms-and-data-structures)
