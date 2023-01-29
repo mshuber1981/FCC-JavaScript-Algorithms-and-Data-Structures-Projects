@@ -3,6 +3,7 @@ import { useAppContext } from "./appContext";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 // Components
+import ScrollToTop from "./components/ScrollToTop";
 import GlobalStyles from "./components/GlobalStyles";
 import { Container } from "react-bootstrap";
 import NavBar from "./components/NavBar";
@@ -79,6 +80,7 @@ export default function App() {
   return (
     <HashRouter>
       <ThemeProvider theme={themes[theme]}>
+        <ScrollToTop />
         <GlobalStyles />
         <NavBar navLinks={navLinks} />
         <main>
