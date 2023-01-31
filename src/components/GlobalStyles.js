@@ -22,33 +22,18 @@ Variables
 Global Styles
 ===============
 */
-body, .modal-content {
+body {
   background: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.color};
 }
 
 .section {
-  min-height: calc(92vh - var(--nav-height) - 2rem);
+  min-height: calc(100vh - 2 * var(--nav-height) - 2rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 1rem 0;
-}
-
-a:hover {
-  cursor: pointer;
-}
-
-.link-icons {
-  line-height: 0;
-  font-size: 2.25rem;
-  transition: var(--transition);
-  color: #FBFDFF;
-
-  &:hover {
-        color: #45413C;
-      }
 }
 
 .description {
@@ -58,6 +43,15 @@ a:hover {
 form {
   width: 100%;
   max-width: 30rem;
+}
+
+.modal-body {
+  background: ${({ theme }) => theme.background};
+  color: ${({ theme }) => theme.color};
+}
+
+.modal-title {
+  color: "#45413C";
 }
 `;
 

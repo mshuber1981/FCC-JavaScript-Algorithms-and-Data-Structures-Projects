@@ -4,11 +4,19 @@ import styled from "styled-components";
 import { Icon } from "@iconify/react";
 
 const StyledFooter = styled.footer`
-  min-height: var(--footer-height);
+  height: var(--nav-height);
   background: var(--primary);
 
-  a {
+  .link-icons {
+    line-height: 0;
+    font-size: 2.25rem;
     margin: 0 1rem;
+    transition: var(--transition);
+    color: #fbfdff;
+
+    &:hover {
+      color: #45413c;
+    }
   }
 `;
 
