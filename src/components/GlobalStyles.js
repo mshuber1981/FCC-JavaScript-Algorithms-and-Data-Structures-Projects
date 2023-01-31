@@ -50,8 +50,8 @@ form {
   color: ${({ theme }) => theme.color};
 }
 
-.modal-title {
-  color: "#45413C";
+.modal-title.h4 {
+  color: #45413C;
 }
 `;
 
