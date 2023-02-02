@@ -19,17 +19,17 @@ export default function CaesarsCipher() {
   const pageTitle = "Caesars Cipher";
 
   const code = `
-function rot13(str) {
-const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  return str
-    .split('')
-    .map(char => {  
-      const pos = alphabet.indexOf(char);      
-      return pos >= 0 ? alphabet[(pos + 13) % 26] : char;
-    })
-    .join('');
-}
-`;
+  function rot13(str) {
+  const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    return str
+      .split('')
+      .map(char => {  
+        const pos = alphabet.indexOf(char);      
+        return pos >= 0 ? alphabet[(pos + 13) % 26] : char;
+      })
+      .join('');
+  }
+  `;
 
   function handleInputChange(event) {
     setInput(event.target.value);
@@ -103,7 +103,7 @@ const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
             Submit
           </Button>
           {submitted ? (
-            <h4 className="my-4 text-success">
+            <h4 className="my-4">
               {inputCopy} = {encoded}
             </h4>
           ) : null}

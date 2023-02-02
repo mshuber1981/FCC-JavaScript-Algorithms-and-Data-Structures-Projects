@@ -18,11 +18,11 @@ export default function ValidPhoneNumber() {
   const pageTitle = "Telephone Number Validator";
 
   const code = `
-function telephoneCheck(str) {
-  var regex = /^(1\\s?)?(\\(\\d{3}\\)|\\d{3})[\\s\\-]?\\d{3}[\\s\\-]?\\d{4}$/;
-  return regex.test(str);
-}
-`;
+  function telephoneCheck(str) {
+    var regex = /^(1\\s?)?(\\(\\d{3}\\)|\\d{3})[\\s\\-]?\\d{3}[\\s\\-]?\\d{4}$/;
+    return regex.test(str);
+  }
+  `;
 
   const handleInputChange = (event) => setInput(event.target.value);
 
@@ -85,13 +85,9 @@ function telephoneCheck(str) {
             Submit
           </Button>
           {!submitted ? null : submitted && !phoneCheck ? (
-            <h4 className="my-4 text-danger">
-              {inputCopy} is not a valid US phone number
-            </h4>
+            <h4 className="my-4">{inputCopy} is not a valid US phone number</h4>
           ) : (
-            <h4 className="my-4 text-success">
-              {inputCopy} is a valid US phone number
-            </h4>
+            <h4 className="my-4">{inputCopy} is a valid US phone number</h4>
           )}
         </Form>
         <CodeModal code={code} />

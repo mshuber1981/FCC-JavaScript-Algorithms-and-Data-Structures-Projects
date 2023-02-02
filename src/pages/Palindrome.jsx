@@ -18,18 +18,18 @@ export default function Palindrome() {
   const pageTitle = "Palindrome Checker";
 
   const code = `
-function palindrome(str) {
-  return (
-        str.replace(/[\\W_]/g, "").toLowerCase() ===
-        str
-            .replace(/[\\W_]/g, "")
-            .toLowerCase()
-            .split("")
-            .reverse()
-            .join("")
-        );
-}  
-`;
+  function palindrome(str) {
+    return (
+          str.replace(/[\\W_]/g, "").toLowerCase() ===
+          str
+              .replace(/[\\W_]/g, "")
+              .toLowerCase()
+              .split("")
+              .reverse()
+              .join("")
+          );
+  }  
+  `;
 
   const handleInputChange = (event) => setInput(event.target.value);
 
@@ -89,11 +89,9 @@ function palindrome(str) {
             Submit
           </Button>
           {!submitted ? null : submitted && !isPalindrome ? (
-            <h4 className="my-4 text-danger">
-              {inputCopy} is not a palindrome
-            </h4>
+            <h4 className="my-4">{inputCopy} is not a palindrome</h4>
           ) : (
-            <h4 className="my-4 text-success">{inputCopy} is a palindrome</h4>
+            <h4 className="my-4">{inputCopy} is a palindrome</h4>
           )}
         </Form>
         <CodeModal code={code} />
