@@ -45,14 +45,23 @@ form {
   max-width: 30rem;
 }
 
-.modal-body {
-  background: ${({ theme }) => theme.background};
-  color: ${({ theme }) => theme.color};
+.modal-dialog {
+  width: 45rem;
+  max-width: 95vw;
+
+  .modal-title.h4 {
+    color: #45413C;
+  }
+
+  .modal-body {
+    background: ${({ theme }) => theme.background};
+    color: ${({ theme }) => theme.color};
+  }
 }
 
-.modal-title.h4 {
-  color: #45413C;
-}
+
+
+
 `;
 
 export default GlobalStyles;
