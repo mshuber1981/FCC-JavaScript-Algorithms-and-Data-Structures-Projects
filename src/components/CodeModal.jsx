@@ -31,6 +31,7 @@ function yourFunction(param) {
 
 const CodeModal = ({ code }) => {
   const [show, setShow] = React.useState(false);
+  const [isCoppied, setCoppied] = React.useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -51,9 +52,31 @@ const CodeModal = ({ code }) => {
           </pre>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
+          {isCoppied ? (
+            <Button
+              variant="success"
+              onClick={function () {
+                // Copy color to clipboard
+                navigator.clipboard.writeText(code);
+              }}
+            >
+              Coppied
+            </Button>
+          ) : (
+            <Button
+              variant="secondary"
+              onClick={function () {
+                // Copy color to clipboard
+                navigator.clipboard.writeText(code);
+                setCoppied(true);
+                setTimeout(() => {
+                  setCoppied(false);
+                }, "5000");
+              }}
+            >
+              Copy
+            </Button>
+          )}
         </Modal.Footer>
       </Modal>
     </StyledCodeModal>
