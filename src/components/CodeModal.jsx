@@ -60,7 +60,7 @@ const CodeModal = ({ code }) => {
                 navigator.clipboard.writeText(code);
               }}
             >
-              Coppied
+              Copied
             </Button>
           ) : (
             <Button
