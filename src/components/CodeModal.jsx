@@ -41,7 +41,6 @@ const CodeModal = ({ code }) => {
       <div title="See the code" onClick={handleShow}>
         <Icon icon="mdi:code-braces-box" className="my-4 code-icon" />
       </div>
-
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Code</Modal.Title>
@@ -56,7 +55,7 @@ const CodeModal = ({ code }) => {
             <Button
               variant="success"
               onClick={function () {
-                // Copy color to clipboard
+                // Copy code to clipboard
                 navigator.clipboard.writeText(code);
               }}
             >
@@ -66,7 +65,7 @@ const CodeModal = ({ code }) => {
             <Button
               variant="secondary"
               onClick={function () {
-                // Copy color to clipboard
+                // Copy code to clipboard
                 navigator.clipboard.writeText(code);
                 setCoppied(true);
                 setTimeout(() => {
