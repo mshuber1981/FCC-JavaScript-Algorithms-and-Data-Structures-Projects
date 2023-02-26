@@ -83,8 +83,8 @@ export default function NavBar({ navLinks }) {
         fixed="top"
       >
         <Container>
-          <Navbar.Brand>
-            <Icon icon="fa-brands:free-code-camp" width="35" height="35" />
+          <Navbar.Brand href="https://mshuber1981.github.io/FCC-JavaScript-Algorithms-and-Data-Structures-Projects/#/">
+            <Icon icon="fa:free-code-camp" width="35" height="35" />
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
