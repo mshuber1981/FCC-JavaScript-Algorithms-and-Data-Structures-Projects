@@ -126,7 +126,7 @@ export const checkCashRegister = (price, cash, cid) => {
       value += curr.val;
 
       // Round change to the nearest hundreth (deals with precision errors)
-      // change = Math.round(change * 100) / 100;
+      change = Math.round(change * 100) / 100;
     }
     // Add this denomination to the output
     if (value > 0) {
