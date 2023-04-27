@@ -58,10 +58,6 @@ form {
     color: ${({ theme }) => theme.color};
   }
 }
-
-
-
-
 `;
 
 export default GlobalStyles;
