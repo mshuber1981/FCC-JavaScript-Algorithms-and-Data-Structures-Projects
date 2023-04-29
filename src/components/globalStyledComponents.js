@@ -34,7 +34,7 @@ export const Title = styled.div`
     margin: 0 auto 1.5rem auto;
     background: ${({ theme }) =>
       theme.name === "light"
-        ? "linear-gradient(to left, var(--primary-light), var(--primary-dark))"
-        : "linear-gradient(to right, var(--primary-dark), var(--primary-light))"};
+        ? "linear-gradient(to left, var(--primary-light), var(--primary))"
+        : "linear-gradient(to right, var(--primary), var(--primary-light))"};
   }
 `;

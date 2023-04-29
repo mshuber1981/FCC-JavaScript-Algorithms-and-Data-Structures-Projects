@@ -11,7 +11,6 @@ Variables
   --bs-success-rgb: 0,100,0;
   --primary-light: #80b280;
   --primary: #006400;
-  --primary-dark: #003200;
   --nav-height: 61.5px;
   --footer-height: 8vh;
   --transition: all 0.3s linear;
