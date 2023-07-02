@@ -11,7 +11,7 @@
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2",
-    "styled-components": "^5.3.11"
+    "styled-components": "^6.0.1"
   },
   "devDependencies": {
     "gh-pages": "^5.0.0",
